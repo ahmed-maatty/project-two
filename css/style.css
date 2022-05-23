@@ -1,0 +1,620 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    padding: 0 ;
+    margin: 0 ; 
+    box-sizing: border-box ;
+    font-family: 'Roboto', sans-serif ;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --Tcolor : #08d9d6 ;
+    --Bcolor : #252a34 ;
+    --Rcolor : #ff2e63 ;
+    --Fcolor : #eaeaea ;
+}
+
+a {
+    text-decoration: none ;
+}
+
+ul {
+    list-style: none ;
+}
+
+.text-R {
+    color: var(--Rcolor) ;
+}
+
+.sec-title {
+    text-align: center ;
+    padding: 1.5rem 1rem ;
+    margin: 30px 0 ;
+    text-transform: capitalize ;
+}
+
+.shadow {
+    box-shadow: 0 0 2px #252a34 ;
+    border: 5px solid #fff ;
+}
+
+.container {
+    max-width: 80% ;
+    margin: auto;
+}
+
+/*navbar*/
+
+#navbar {
+    display: flex ;
+    justify-content: space-between ;
+    text-align: center ;
+    padding: 0.75rem ;
+    background-color: var(--Bcolor) ;
+    position: fixed ;
+    z-index: 999;
+    width: 100%;
+}
+
+#navbar .logo img {
+    width: 80% ;
+}
+
+#navbar ul  {
+    display: flex ;
+    align-items: center ;
+}
+
+#navbar ul li {
+    margin: 0 25px ;
+}
+
+#navbar ul li a {
+    color: #fff ;
+    font-weight: 500 ;
+    transition: 0.3s ;
+}
+
+#navbar ul li a:hover {
+    color: var(--Tcolor) ;
+}
+
+/*/navbar*/
+
+/*showcase*/
+
+#showcase {
+    height: 100vh;
+    background: url(/imgs/showcase.jpg);
+    background-size: cover ;
+}
+
+.showcase-content {
+    height: 100% ;
+    display: flex ;
+    flex-direction: column ;
+    justify-content: center ;
+    align-items: center ;
+
+    /*over lay*/
+    background-color: rgba(0,0,0,0.6) ;
+}
+
+.SC-title {
+    color: var(--Fcolor) ;
+    font-size: 45px ;
+    letter-spacing: 1px ;
+    text-transform: uppercase ;
+    text-align: center ;
+    margin: 25px 0 ;
+}
+
+
+.btn-1 {
+    background-color: var(--Tcolor) ;
+    padding: 10px 25px ;
+    color:var(--Bcolor) ;
+    text-transform: uppercase ;
+    font-weight: 500 ;
+    border-radius: 8px ;
+    transition: 0.4s ;
+}
+
+.btn-1:hover {
+    transform: scale(1.1) ;
+    background-color: var(--Rcolor) ;
+}
+
+/*/showcase*/
+
+/*about-sectio*/
+
+#about .container {
+    display: flex ;
+    justify-content: space-between ; 
+    margin-bottom: 35px;
+}
+
+#about .container p {
+    color: var(--Bcolor) ;
+    text-transform: capitalize ;
+    letter-spacing: 1px ;
+    font-size: 15px ;
+    font-weight: 400 ;
+    line-height: 1.5 ;
+    padding: 60px 0px ;
+}
+
+#about .container .imgshadow {
+    width: 50% ;
+    box-shadow: 0 0 2px #252a34 ;
+    border: 5px solid #fff ;
+}
+
+/*/about-section*/ 
+
+/*CTA-section*/
+
+#cta {
+    background: url(/imgs/cta.jpg) no-repeat center center/cover ;
+    color: #fff ;
+    margin-bottom: 15px;
+}
+
+#cta .sec-title {
+    text-transform: uppercase ;
+}
+
+.cta-content {
+    min-height: 350px ;
+    display: flex ;
+    flex-direction: column ;
+    justify-content: center ;
+    align-items: center ;
+
+    /*over lay*/
+
+    background-color: rgba(0,0,0,0.6) ;
+}
+
+.cta-content p {
+    text-transform: capitalize ;
+    text-align: center ;
+    margin-bottom: 25px ;
+    padding: 0 8rem ;
+}
+
+/*/CTA-section*/
+
+/*programs-section*/
+
+#programs {
+    background-color: white ;
+    margin: 30px 0;
+}
+
+#programs .boxes {
+    display: flex ;
+    justify-content: space-between ;
+
+}
+
+#programs .boxes .box {
+    text-align: center ;
+    width: 30% ;
+    padding: 25px 30px ;
+}
+
+
+#programs .boxes .box img {
+    width: 70px ;
+    background-color: var(--Tcolor) ;
+    padding: 8px ;
+    border-radius: 100% ;
+    margin-bottom: 10px ;
+}
+
+#programs .boxes .box h3 , p {
+    margin: 10px 0 ;
+    text-transform: capitalize ;
+    letter-spacing: 1px ;
+}
+
+/*/programs-section*/
+
+/*trainers*/
+
+#trainers {
+    background-color: var(--Fcolor) ;
+    padding: 25px 0 50px 0 ;
+}
+
+#trainers .TR-box {
+    display:flex ;
+    justify-content: space-between ;
+}
+
+#trainers .TR-boxes {
+    flex: 1 ;
+    margin: 0 20px;
+    background-color: white ;
+    padding: 30px ;
+    transition: 0.4s ;
+    border-radius: 10px;
+}
+
+#trainers .TR-boxes:hover {
+    transform: scale(1.1) ;
+}
+
+#trainers .TR-boxes img {
+    width: 100% ;
+    border-radius: 5px ;
+}
+
+#trainers .TR-boxes h4 {
+    margin: 10px 0 ;
+    text-transform: capitalize;
+}
+
+#trainers .TR-boxes p {
+    text-transform: capitalize ;
+    letter-spacing: 1px ;
+    font-weight: 400 ;
+}
+
+#trainers .TR-boxes ul {
+    display: flex ;
+}
+
+#trainers .TR-boxes ul a {
+    color: var(--Bcolor) ;
+    margin: 0 5px ;
+    transition: 0.3s ;
+}
+
+#trainers .TR-boxes ul a:hover {
+    color: var(--Rcolor) ;
+}
+
+/*/trainers*/
+
+/*contact-us*/
+
+#contact {
+    margin-bottom: 15px;
+}
+
+.content-contact {
+    display: flex ;
+}
+
+#contact .contact-us {
+    background-color: var(--Tcolor);
+    padding: 1rem ;
+}
+
+#contact .content-contact .contact-us,
+#contact .content-contact #map {
+    flex: 1 ;
+}
+
+#contact .contact-us h1 {
+    text-transform: capitalize ;
+    padding: 20px ;
+    color: white;
+    margin: 15px 0;
+} 
+
+#contact .contact-us input,
+#contact .contact-us textarea {
+    width: 100% ;
+    border: none ;
+    outline: none;
+    margin-bottom: 1rem ;
+    padding: 0.75rem ;
+}
+
+#contact .contact-us .btn-CU {
+    background-color: var(--Bcolor) ;
+    color: #fff ;
+    transition: 0.4s ;
+    width: 70%;
+    border-radius: 10px;
+    margin: 0 110px ;
+}
+
+#contact .contact-us .btn-CU:hover {
+    background-color: var(--Rcolor) ;
+    transform: scale(1.1) ;
+}
+
+#contact .contact-us .form-group{
+    display: flex ;
+}
+
+#contact .contact-us .form-group input[name="name"] {
+    margin-right: 0.75rem ;
+}
+
+/*/contact-us*/
+
+/*footer*/
+
+footer {
+    text-align: center ;
+    background-color: var(--Bcolor) ;
+    padding: 30px 15px ;
+    color: white ;
+    text-transform: capitalize ;
+    letter-spacing: 1px ;
+}
+
+footer p {
+    font-size: 20px ;
+    text-transform: capitalize;
+    margin: 10px 0;
+}
+
+footer p span {
+    text-transform: uppercase ;
+    font-weight: 600 ;
+    transition: 0.4s;
+}
+
+footer p span:hover {
+    letter-spacing: 8px ;
+    color: var(--Rcolor);
+}
+
+/*/footer*/
+
+/*menu*/
+
+#menu {
+    display: none;
+    position: relative;
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+}
+
+#menu span {
+    display: block;
+    width: 32px;
+    height: 4px;
+    background-color: var(--Fcolor);
+    border-radius: 6px;
+    transform-origin:0 0;
+    transition: 0.4s;
+    margin-bottom: 5px;
+}
+
+#menu.is-active span:nth-child(1) {
+    transform: translate(0px,-2px) rotate(45deg) ;
+}
+
+#menu.is-active span:nth-child(2) {
+    opacity: 0;
+    transform: translateX(15px);
+}
+
+#menu.is-active span:nth-child(3) {
+    transform: translate(-3px,3px) rotate(-45deg) ;
+}
+
+#menu.is-active span {
+    background-color: var(--Rcolor);
+}
+
+/*/menu*/
+
+/*up-btn*/
+
+#up {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 15px;
+    right: -90px;
+    background-color: var(--Bcolor);
+    color: var(--Tcolor);
+    text-align: center;
+    padding: 12px;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+#up.activion {
+    right: 25px;
+}
+
+/*/up-btn*/
+
+/*media-query*/
+
+@media screen and ( max-width: 540px ) and (max-height: 1200px ){
+
+    #navbar{
+        width: 100%;
+        height: 80px ;
+        border-bottom: solid 1px gray;
+    }
+
+    #navbar ul {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #252a34;
+    }
+
+    #navbar ul.is-active {
+        display: block ;
+    }
+
+    #menu{
+        display: block;
+    }
+
+    #navbar ul li {
+        padding: 20px ;
+        margin: 5px;
+        border-bottom: 1px solid gray;
+    }
+
+    #navbar .logo img {
+        width: 65%;
+    }
+
+    .SC-title {
+        font-size: 30px;
+    }
+
+    #about .container .imgshadow {
+        display: none;
+    }
+
+    .cta-content {
+        height: 100vh;
+    }
+
+    .cta-content p {
+        padding: 0 2.5rem;
+    }
+
+    #programs .boxes {
+        flex-direction: column;
+    }
+
+    #programs .boxes .box {
+        width: 95%
+    }
+
+    #trainers {
+        min-height: 100vh;
+    }
+
+    #trainers .TR-box {
+        flex-direction: column;
+    }
+
+    #trainers .TR-boxes {
+        margin: 10px 20px;
+    }
+
+    #map {
+        display: none;
+    }
+
+    #contact .contact-us .btn-CU {
+        margin: 0 55px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+
+    footer p {
+        font-size: 16px;
+    }
+}
+
+@media ( max-width: 920px ) and ( max-height: 550px ) {
+    #navbar{
+        width: 100%;
+        height: 80px ;
+        border-bottom: solid 1px gray;
+    }
+
+    #navbar ul {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #252a34;
+    }
+
+    #navbar ul.is-active {
+        display: block ;
+    }
+
+    #menu{
+        display: block;
+    }
+
+    #navbar ul li {
+        padding: 20px ;
+        margin: 5px;
+        border-bottom: 1px solid gray;
+    }
+
+    #navbar .logo img {
+        width: 70%;
+    }
+
+    .SC-title{
+        font-size: 35px
+    }
+
+    #about .container .imgshadow {
+        display: none;
+    }
+
+    .cta-content {
+        padding: 1rem ;
+    }
+
+    #programs .boxes {
+        flex-direction: column;
+    }
+
+    #programs .boxes .box {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #trainers .TR-box {
+        flex-direction: column;
+    }
+
+    #trainers .TR-boxes {
+        margin: 10px;
+    }
+
+    #map {
+        display: none;
+    }
+
+    #contact .contact-us .btn-CU {
+        margin: 0
+    }
+
+    #contact .contact-us .btn-CU {
+        margin: 0 95px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+
+    footer p {
+        font-size: 16px;
+    }
+}
+
+
+@media ( min-width: 725px ) and ( max-width: 1200px ) and ( min-height: 600px ) and ( max-height:1400px ){
+
+}
+/*media-query*/
