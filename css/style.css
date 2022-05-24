@@ -86,7 +86,7 @@ ul {
 
 #showcase {
     height: 100vh;
-    background-image: url(/imgs/showcase.jpg);
+    background-image: url(../imgs/showcase.jpg);
     background-size: cover ;
 }
 
@@ -157,7 +157,7 @@ ul {
 /*CTA-section*/
 
 #cta {
-    background-image: url(/imgs/cta.jpg);
+    background-image: url(../imgs/cta.jpg);
     color: #fff ;
     margin-bottom: 15px;
     background-size: cover;
